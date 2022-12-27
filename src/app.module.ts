@@ -6,8 +6,8 @@ import { AppService } from './app.service';
 import { AppConfigModule } from './configs/app/config.module';
 import { DatabaseModule } from './configs/database/database.module';
 import { UserModule } from './models/user/user.module';
-import { GroupModule } from './models/group/group.module';
 import { AuthMiddleware } from './common/middlewares/auth.middleware';
+import { TodoModule } from './models/todo/todo.module';
 
 @Module({
   imports: [
@@ -15,7 +15,7 @@ import { AuthMiddleware } from './common/middlewares/auth.middleware';
     DatabaseModule,
     LoggerModule,
     UserModule,
-    GroupModule,
+    TodoModule,
   ],
   controllers: [AppController],
   providers: [AppService],

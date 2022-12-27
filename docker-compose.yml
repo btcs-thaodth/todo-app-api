@@ -10,4 +10,4 @@ services:
     healthcheck:
       test: ['CMD', 'pg_isready']
     ports:
-      - '5432:5432'
+      - '51432:5432'
